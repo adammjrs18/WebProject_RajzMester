@@ -1,0 +1,34 @@
+.feature-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+
+  .feature-card {
+    width: 250px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Középre igazítja vízszintesen */
+  justify-content: center;  /* Középre igazítja függőlegesen */
+  height: 50vh;            /* A hero szekció teljes képernyőt kitölt */
+  text-align: center;       /* Szöveg középre igazítása */
+  padding: 2rem;
+  background: linear-gradient(135deg, #3f51b5, #2196f3);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+

@@ -1,0 +1,16 @@
+<div class="teacher-grid">
+  <mat-card *ngFor="let teacher of teachers" class="teacher-card">
+    <mat-card-header>
+      <mat-card-title>{{ teacher.name }}</mat-card-title>
+      <mat-card-subtitle>{{ teacher.subject }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="teacher.image" alt="{{ teacher.name }}" />
+    <mat-card-content>
+      <p>{{ teacher.bio }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="teachers && teachers.length === 0">
+  <p>Nincs elérhető tanár!</p>
+</div>

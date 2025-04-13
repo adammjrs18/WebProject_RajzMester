@@ -1,0 +1,16 @@
+<div class="hero">
+  <h1>Üdvözöl a RajzMester!</h1>
+  <p>Tanulj, fejlődj, építsd a jövőd!</p>
+</div>
+
+<div class="feature-grid">
+  <mat-card class="feature-card" *ngFor="let f of features">
+    <mat-card-header>
+      <mat-icon>{{ f.icon }}</mat-icon>
+      <mat-card-title>{{ f.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ f.desc }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

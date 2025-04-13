@@ -1,0 +1,17 @@
+
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer [mode]="mode.value">I'm a drawer</mat-drawer>
+  <mat-drawer-content>
+    <mat-form-field>
+      <mat-label>Menu</mat-label>
+      <mat-select #mode value="side" (selectionChange)="menuSwitch($event.value)">
+        <mat-option value="home">Home</mat-option>
+        <mat-option value="courses">Courses</mat-option>
+        <mat-option value="instructors">Instructors</mat-option>
+        <mat-option value="profile">Profile</mat-option>
+        <mat-option value="login">Login</mat-option>
+        <mat-option value="signup">Sign Up</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-drawer-content>
+</mat-drawer-container>
